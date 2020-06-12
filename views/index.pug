@@ -1,0 +1,65 @@
+html
+  head
+    title 2019 Stanley Cup Finals Stats API
+    link(rel='stylesheet', href='/css/styles.css')
+  body
+    header
+      .header 2019 Stanley Cup Finals Stats API
+    table
+        tr
+          td
+            .blank
+          th
+            text Get/teams
+          th
+            text Get/teams/{team}
+          th
+            text Get/players
+          th
+            text GET/player/{lastName}
+          th
+            text POST/player
+          th
+            text Get/coaches
+          th
+            text Get/coaches/{coach}
+            
+        tr
+          th
+            text Route:
+          td https://localhost:1111/teams
+          td https://localhost:1111/teams/{team}
+          td https://localhost:1111/players/         
+          td https://localhost:1111/players/{player}
+          td https://localhost:1111/players/ 
+          td https://localhost:1111/coaches         
+          td https://localhost:1111/coaches/{coach}       
+        
+        tr
+          th
+            text Headers:
+          td Authorization: YOUR_API_KEY_HERE
+          td Authorization: YOUR_API_KEY_HERE
+          td Authorization: YOUR_API_KEY_HERE
+          td Authorization: YOUR_API_KEY_HERE
+          td Authorization: YOUR_API_KEY_HERE
+          td Authorization: YOUR_API_KEY_HERE
+          td Authorization: YOUR_API_KEY_HERE
+
+        tr
+          th
+            text Description:   
+          td Returns all Teams.
+          td Returns a team with it's players and their stats form the provided name.
+          td Returns all players.
+          td Returns the player and their stats by provided last name. 
+          td Accepts new player details and saves them as a new player, returning the saved record with a 201 status.
+          td Returns all coahces
+          td Returns a coach with their team by last name. 
+    p.hello HELLO <br> Welcome to the 2019 Stanley Cup Finals Stats API.
+       
+  
+    
+  
+
+    
