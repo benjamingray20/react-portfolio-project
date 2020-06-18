@@ -1,0 +1,25 @@
+
+.subTitle {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.output {
+  font-size: 20px;
+  text-align: center;
+}
+
+.goBack {
+    color:black;
+}
+
+.error {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stats {
+    text-align: center;
+}
