@@ -9,10 +9,11 @@ export const getPlayerLastNameFromUrl = location => (location && location.pathna
 export const retrievePlayersStats = async (location) => {
   const playerLastName = getPlayerLastNameFromUrl(location)
 
-  const { id, firstName, lastName, position, teamId, stats } = await fetchStatsForPlayer(playerLastName)
+  // eslint-disable-next-line max-len
+  const { id, firstName, lastName, position, teamId, skaterStat, goalieStat } = await fetchStatsForPlayer(playerLastName)
 
-  if (!id || !firstName || !lastName || !position || !teamId || !stats) {
-    return { lastName: '', details: {}, stats: [] }
+  if (!id || !firstName || !lastName || !position || !teamId) {
+    return { id: 0, details: {}, skaterStat: [], goalieStat: [] }
   }
-  return { id, stats, details: { id, firstName, lastName, position, teamId } }
+  return { skaterStat, goalieStat, details: { id, firstName, lastName, position, teamId } }
 }

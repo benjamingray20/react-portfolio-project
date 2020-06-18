@@ -38,6 +38,7 @@ export default () => {
           <Player
             firstName={player.firstName}
             lastName={player.lastName}
+            position={player.position}
           />
         ))
       }
